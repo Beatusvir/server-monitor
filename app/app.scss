@@ -1,0 +1,74 @@
+/* app css stylesheet */
+@import "variables";
+@import "./home/_home";
+@import "./server/_server";
+
+body {
+  background-color: $background-color;
+  color: $font-primary-color;
+  font-family: Sans-Serif;
+}
+
+nav{
+  background-color: $nav-background-color;
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  align-items: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: #efefef;
+  font-size: 1.5em;
+}
+
+nav #home{
+  display: flex;
+  margin: 0 0 0 20px;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: orange;
+}
+
+nav #links{
+  margin: 0 20px 0 auto;
+  padding: 0;
+}
+
+nav #links ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #efefef;
+}
+
+nav ul li:last-child{
+  padding-right: 0;
+  border-right: none;
+}
+
+nav ul li a{
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.status-ok{
+  background-color: $ok-color;
+}
+
+.status-error{
+  background-color: $error-color;
+}

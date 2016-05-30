@@ -1,0 +1,51 @@
+@import "variables";
+
+h1 {
+  color: orange;
+}
+
+.server-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+table{
+  width: 80%;
+  margin-top: 20px;
+}
+
+tr {
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: #cfcfcf;
+  text-shadow: 1px 0 0 $font-secondary-color;
+}
+
+th{
+  color: $font-primary-color;
+  font-size: 1.5em;
+  line-height: 3em;
+}
+
+td {
+  padding: 10px;
+  color: $font-secondary-color;
+}
+
+span {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px 10px;
+}
+
+.odd{
+  background-color: #dfdfdf;
+}

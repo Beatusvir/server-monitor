@@ -1,0 +1,21 @@
+<div class="server-detail">
+  <h1>{{ server }}</h1>
+  <table>
+  <thead>
+    <tr>
+      <th>Parametro</th>
+      <th>Descripci&oacute;n</th>
+      <th>Fecha</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="parameter in parameters" ng-class-odd="'odd'" ng-class-even="'even'" ng-click="viewDetail(parameter.id)">
+      <td>{{ parameter.id }}</td>
+      <td>{{ parameter.description }}</td>
+      <td>{{ parameter.updated }}</td>
+      <td><span ng-class="setClass(parameter.status)"></span></td>
+    </tr>
+  </tbody>
+</table>
+</div>

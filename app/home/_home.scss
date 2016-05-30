@@ -1,0 +1,40 @@
+@import "variables";
+
+.servers {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article{
+  flex: 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid $background-color;
+}
+article:hover{
+    cursor: pointer;
+    border: 1px solid $font-secondary-color;
+}
+  article > * {
+    margin: 0 0 10px 0;
+  }
+  article .title{
+    text-align: center;
+  }
+
+    article .status img{
+      display: block;
+      margin: 0 auto;
+    }
+
+  article .description{
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 1em;
+    max-height: 2em;
+    color: $font-secondary-color;
+  }

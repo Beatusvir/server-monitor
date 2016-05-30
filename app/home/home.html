@@ -1,0 +1,13 @@
+<div class="servers">
+  <article ng-repeat="server in servers" ng-click="viewServer(server.title)">
+    <div class="title">
+      {{ server.title }}
+    </div>
+    <div class="status">
+      <img ng-src="{{ server.image }}" alt="">
+    </div>
+    <div class="description">
+      {{ server.description }}
+    </div>
+  </article>
+</div>
